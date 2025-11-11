@@ -1,0 +1,12 @@
+classDiagram
+    class Class {
+        -string courseName
+        -string courseNumber
+        -vector<int> sections
+        -int maxAttendance
+        -int actualEnrolled
+        +Class(string, string, vector<int>, int, int)
+        +bool operator<(Class) const
+        +Class operator+(Class) const
+        +friend ostream& operator<<(ostream&, const Class&)
+    }
